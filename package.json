@@ -1,0 +1,12 @@
+{
+  "name": "simple-ts-app",
+  "version": "1.0.0",
+  "description": "Super simple TypeScript app",
+  "scripts": {
+    "build": "tsc && cp index.html dist/",
+    "start": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
