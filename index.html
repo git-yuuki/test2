@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple TypeScript App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        button {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+        #result {
+            margin-top: 30px;
+            font-size: 24px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Simple TypeScript App</h1>
+        <p>ボタンを押してTypeScriptの動作を確認してください！</p>
+        
+        <button onclick="app.sayHello()">こんにちは</button>
+        <button onclick="app.showTime()">現在時刻</button>
+        <button onclick="app.randomColor()">色を変更</button>
+        <button onclick="app.calculate()">計算実行</button>
+        
+        <div id="result"></div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
